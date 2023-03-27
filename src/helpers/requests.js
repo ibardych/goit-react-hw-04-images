@@ -14,6 +14,8 @@ const PARAMS = {
 const requestPixabayImages = async ({ query, page }) => {
   const url = `${BASE_URL}?q=${query}&page=${page}`;
 
+  console.log('url: ', url);
+
   try {
     const response = await axios.get(url, { params: PARAMS });
     const { totalHits, hits: images } = response.data;
