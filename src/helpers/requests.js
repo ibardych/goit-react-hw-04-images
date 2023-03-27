@@ -2,7 +2,7 @@ import axios from 'axios';
 import { pixabayApiKey } from 'constants/api.keys';
 import { IMAGES_PER_PAGE } from 'constants/gallery';
 
-const BASE_URL = 'https://pixabay.com/api';
+const BASE_URL = 'https://pixabay.com/api/';
 const PARAMS = {
   key: pixabayApiKey,
   image_type: 'photo',
